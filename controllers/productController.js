@@ -2,9 +2,16 @@ const allProducts = (req, res) => {
     res.status(200).json({ message: "Todos los productos" });
 };
 
-const createProduct = (req, res) => {
+const createProduct = (req, res, next) => {
+    try {
+        if(!req.body.nombre){
+            res.status(400);
+        }
+    } catch (error) {
+        return next(error);
+    }
     res.status(200).json({ message: "Creaste un producto" });
-};
+}
 
 const getProduct = (req, res) => {
     res.status(200).json({ message: `El id de tu producto es: ${req.params.id}` });
