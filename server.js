@@ -2,7 +2,11 @@
 const express = require('express');
 const dotenv = require('dotenv').config();
 const { errorHandler } = require('./middleware/errorhandler');
+const connectDB = require('./config/db');
 const port = process.env.PORT || 5000;
+
+//Database connection
+connectDB();
 
 //Routes imports
 const app = express();
@@ -13,7 +17,10 @@ app.use(express.urlencoded({ extended:false }));
 
 //routes
 const productRoutes = require('./routes/productRoutes');
-app.use('/api', productRoutes);
+const userRoutes = require('./routes/userRoutes')
+
+app.use('/api/products', productRoutes);
+app.use('/api/users', userRoutes);
 
 //error handler
 app.use(errorHandler);
