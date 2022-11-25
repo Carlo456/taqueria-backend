@@ -1,0 +1,37 @@
+[
+    {
+        "cardNumber": "6250941006528599",
+        "pin": 1235,
+        "firstName": "Carlo Gustavo",
+        "lastName": "Valenzuela Zepeda",
+        "balance": 200.50
+    },
+    {
+        "cardNumber": "6236981006528599",
+        "pin": 3256,
+        "firstName": "Romina Estrella",
+        "lastName": "Carola Hernandez",
+        "balance": 20000.50
+    },
+    {
+        "cardNumber": "6250941006245899",
+        "pin": 1254,
+        "firstName": "Fausto Josue",
+        "lastName": "Carrion Rodriguez",
+        "balance": 1900
+    },
+    {
+        "cardNumber": "9832941006528599",
+        "pin": 1587,
+        "firstName": "Yonas Gabriel",
+        "lastName": "Duarte Carranza",
+        "balance": 18500.50
+    },
+    {
+        "cardNumber": "6985841006528599",
+        "pin": 3698,
+        "firstName": "Yanet Rodriguez",
+        "lastName": "Calderon Calderon",
+        "balance": 27500.25
+    }
+]
